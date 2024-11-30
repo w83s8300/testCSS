@@ -1,0 +1,140 @@
+section{
+    margin: 10px;
+    border: 2px solid gray;
+    padding: 10px;
+    height: 250px;
+}
+
+
+.transform div,.boxL div ,.boxR div{
+    
+    
+    width: 130px;
+    height: 130px;
+    background-color: lightblue;
+    margin: 0 50px;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+.trans1:hover{
+    transform: translate(30px, 30px);
+}
+.trans2:hover{
+    transform: translateX(40px);
+}
+.trans3:hover{
+    transform: translateY(50px);
+}
+
+.scale1:hover{
+    transform: scale(2, 1.5);
+}
+.scale2:hover{
+    transform: scaleX(0.5);
+}
+.scale3:hover{
+    transform: scaleY(2);
+}
+
+.rotate1:hover{
+    transform: rotate(45deg);
+}
+.rotate2:hover{
+    transform: rotate(-25deg);
+}
+.rotate3:hover{
+    transform: rotateY(30deg);
+}
+
+.skew1:hover{
+    transform: skew(30deg, 30deg);
+}
+.skew2:hover{
+    transform: skewX(30deg);
+}
+.skew3:hover{
+    transform: skewY(30deg);
+}
+
+.origin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.origin h2{
+    width: 100%;
+}
+.origin .boxL div{
+    font: none;
+    position: absolute;
+    /* top: 1320px; */
+    left: 100px;
+    /* border: none; */
+    transform-origin: 50%  100%;
+}
+.boxL{
+    width: 40%;
+    height: 130px;
+    left: 100px;
+    top: 1320px;
+}
+.boxR{
+    width: 40%;
+    height: 130px;
+    left: 100px;
+}
+.boxL img{
+    width: 100%;
+    
+}
+.boxR img{
+    width: 100%;
+}
+
+.box1{
+    
+    transform: rotate(-40deg);
+}
+.box2{
+    transform: rotate(-20deg);
+}
+.box3{
+    transform: rotate(0deg);
+}
+.box4{
+    transform: rotate(20deg);
+}
+.box5{
+    transform: rotate(40deg);
+}
+
+.box1:hover{
+    background-color: bisque;
+    transform: translate(-40px,-40px)  rotate(-40deg);
+    /* z-index:1; */
+    
+}
+.box2:hover{
+    background-color: bisque;
+    transform: translate(-20px,-40px) rotate(-20deg);
+    /* z-index:1; */
+}
+.box3:hover{
+    background-color: bisque;
+    transform: translate(0,-40px) rotate(0deg);
+    /* z-index:1; */
+}
+.box4:hover{
+    background-color: bisque;
+    transform: translate( 20px, -40px)  rotate(20deg);
+    /* z-index:1; */
+}
+.box5:hover{
+    background-color: bisque;
+    transform: translate( 40px, -40px)rotate(40deg);
+    /* z-index:1; */
+}

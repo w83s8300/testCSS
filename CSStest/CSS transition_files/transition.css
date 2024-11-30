@@ -1,0 +1,65 @@
+section{
+    margin: 10px;
+    border: 2px solid gray;
+    padding: 10px;
+    height: 350px;
+}
+
+
+.box{
+    width: 130px;
+    height: 130px;
+    background-color: lightblue;
+    margin: 0 50px;
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    /* transition-duration: 1s;
+    transition-property: width height background-color;
+    transition-timing-function: ease-in;
+    transition-delay: 1s; */
+    transition: 1s width ease-in 1s,
+                1s height ease-in 2s,
+                1s background-color ease-in 3s;
+}
+
+.box:hover{
+    width: 400px;
+    height: 200px;
+    background-color: lightcoral;
+}
+
+.time{
+    list-style-type: none;
+    
+}
+
+.time li{
+    width: 100px;
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    left: 0;
+}
+
+.time:hover li{
+    left: 500px;
+}
+
+.t1{
+    transition: left 2s ease;
+}
+.t2{
+    transition: left 2s linear;
+}
+.t3{
+    transition: left 2s ease-in;
+}
+.t4{
+    transition: left 2s ease-out;
+}
+.t5{
+    transition: left 2s ease-in-out;
+}

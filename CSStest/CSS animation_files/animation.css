@@ -1,0 +1,126 @@
+.anim1{
+    margin: 10px;
+    border: 2px solid gray;
+    padding: 15px;
+    height: 200px;
+}
+
+@keyframes light{
+    /* from{
+        background-color: yellow;
+    }
+    to{
+        background-color: red;
+    } */
+    0%{
+        background-color: yellow;
+    }
+    20%{
+        background-color: yellow;
+    }
+    40%{
+        background-color: red;
+    }
+    60%{
+        background-color: red;
+    }
+    80%{
+        background-color: red;
+    }
+    100%{
+        background-color: red;
+    }
+}
+
+.box1{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: light;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+.anim2{
+    margin: 10px;
+    border: 2px solid gray;
+    padding: 15px;
+    height: 200px;
+}
+
+@keyframes myani{
+    from{
+        left: 20px;
+    }
+    to{
+        left: 600px;
+    }
+}
+
+.box2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    position: absolute;
+
+    animation-name: myani;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.box2:hover{
+    animation-play-state: paused;
+}
+
+.anim3{
+    margin: 10px;
+    border: 2px solid gray;
+    /* padding: 15px; */
+    height: 700px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+@keyframes myanim{
+    0%{
+        background-color: red;
+        left:20%;
+        top: 20%;
+    }
+    25%{
+        background-color: yellow;
+        left: 80%;
+        top: 20%;
+    }
+    50%{
+        background-color: blue;
+        left: 60%;
+        top: 60%;
+    }
+    75%{
+        background-color: green;
+        left:20%;
+        top: 60%;
+    }
+    100%{
+        background-color: red;
+        left:20%;
+        top: 20%;
+    }
+}
+
+.box3{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+
+    animation: myanim 4s ease-in-out alternate infinite;
+}

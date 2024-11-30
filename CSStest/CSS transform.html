@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transform</title>
+    <link rel="stylesheet" href="./CSS transform_files/transform.css">
+</head>
+<body>
+    <h1>CSS transform -【變形】</h1>
+    <section class="transform">
+        <h2>translate() -【移動】</h2>
+        <div class="trans1">向右30px<br>向下30px</div>
+        <div class="trans2">向右40px</div>
+        <div class="trans3">向下50px</div>
+    </section> 
+    <section class="transform">
+        <h2>scale() -【縮放】</h2>
+        <div class="scale1">寬度放大2倍<br>高度放大1.5倍</div>
+        <div class="scale2">寬度縮小0.5倍</div>
+        <div class="scale3">高度放大2倍</div>
+    </section>
+    <section class="transform">
+        <h2>rotate() -【旋轉】</h2>
+        <div class="rotate1">順時針旋轉45度</div>
+        <div class="rotate2">逆時針旋轉25度</div>
+        <div class="rotate3">Y順時針反轉180度</div>
+    </section>
+    <section class="transform">
+        <h2>skew() -【傾斜】</h2>
+        <div class="skew1">X軸傾斜30度Y軸傾斜30度</div>
+        <div class="skew2">X軸傾斜30度</div>
+        <div class="skew3">Y軸傾斜30度</div>
+    </section>
+    
+    <section class="origin">
+        <h2>transform-origin()</h2>
+        <div class="boxL" >
+            
+            <div class="box1" onmouseover="mouseover(this)"><img src="https://fakeimg.pl/105x80/200">A1</div>
+            <div class="box2" onmouseover="mouseover(this)"><img src="https://fakeimg.pl/105x80/200">A2</div>
+            <div class="box3" onmouseover="mouseover(this)"><img src="https://fakeimg.pl/105x80/200">A3</div>
+            <div class="box4" onmouseover="mouseover(this)"><img src="https://fakeimg.pl/105x80/200">A4</div>
+            <div class="box5" onmouseover="mouseover(this)"><img src="https://fakeimg.pl/105x80/200">A5</div>
+        </div>
+        <div class="boxR">
+            <div id="div_value"></div>
+        </div>
+    </section>    
+</body>
+<script>
+    function mouseover(element){
+        // 获取原始 div 的内容
+        let originalContent = element.innerHTML;
+
+        // 获取目标 div (请将 'targetDiv' 替换为你的目标 div 的 id 或 class)
+        let targetDiv = document.getElementById('div_value');
+
+        // 清空目标 div
+        targetDiv.innerHTML = '';
+
+        // 将原始 div 的内容添加到目标 div
+        targetDiv.innerHTML = originalContent;
+    }
+</script>
+</html>
